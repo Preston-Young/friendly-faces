@@ -29,22 +29,26 @@ class Register extends Component{
     }
 
     onSubmitRegister = () => {
-        fetch('http://localhost:3000/register', {
-            method: 'post',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                name: this.state.name,
-                email: this.state.email,
-                password: this.state.password
+        if (this.state.password === this.state.confirmPassword) {
+            fetch('http://localhost:3000/register', {
+                method: 'post',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    name: this.state.name,
+                    email: this.state.email,
+                    password: this.state.password
+                })
             })
-        })
-        .then(response => response.json())
-        .then(user => {
-            if (user) {
-                this.props.loadUser(user);
-                this.props.onRouteChange('home');
-            }
-        })
+            .then(response => response.json())
+            .then(user => {
+                if (user) {
+                    this.props.loadUser(user);
+                    this.props.onRouteChange('home');
+                }
+            })
+        } else {
+            alert('Passwords do not match!');
+        }
     }
 
     render() {
