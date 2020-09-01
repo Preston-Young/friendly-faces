@@ -14,3 +14,6 @@ This is the first full stack web I've built on my journey to teaching myself web
 * Add more requirements for the password length, special characters, etc.
 * Detect multiple faces
 * Add ability to change forgotten password
+
+## Sample interaction of a logged in user uploading a photo
+![friendly_faces](https://user-images.githubusercontent.com/56369636/91896772-3ccea000-ec4e-11ea-8271-f3c892f76509.JPG)
