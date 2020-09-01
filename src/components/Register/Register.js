@@ -30,7 +30,7 @@ class Register extends Component{
 
     onSubmitRegister = () => {
         if (this.state.password === this.state.confirmPassword) {
-            fetch('https://friendlyfaces.herokuapp.com/register', {
+            fetch('https://friendlyfacesapi.herokuapp.com/register', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
