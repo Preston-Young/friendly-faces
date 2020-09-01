@@ -17,3 +17,9 @@ This is the first full stack web I've built on my journey to teaching myself web
 
 ## Logged in user uploading a photo
 ![friendly_faces](https://user-images.githubusercontent.com/56369636/91896772-3ccea000-ec4e-11ea-8271-f3c892f76509.JPG)
+
+## Register Page
+<img width="1440" alt="friendly_faces_register" src="https://user-images.githubusercontent.com/56369636/91897988-f0845f80-ec4f-11ea-982d-8612d2b6cb6e.png">
+
+## Signin Page
+<img width="1440" alt="friendly_faces_signin" src="https://user-images.githubusercontent.com/56369636/91897978-eb271500-ec4f-11ea-8233-19c2d42f32db.png">
